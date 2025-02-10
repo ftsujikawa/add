@@ -1,7 +1,7 @@
 import os
 
 VariantDir('build', 'src')
-GTEST_HOME = '/home/tsu/oss/googletest-1.16.0'
+GTEST_HOME = '/usr/local'
 GTEST_INCLUDE = os.path.join(GTEST_HOME, 'include')
 
 testEnv = Environment(
