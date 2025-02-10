@@ -10,8 +10,9 @@
 TEST(AddTest, onePlusTwoGivesThree) {
     EXPECT_EQ(3, add(1, 2));
 }
-TEST(AddTest, onePlusZeroGivesne) {
-  EXPECT_EQ(1, add(1, 0));
+TEST(AddTest, onePlusZeroGiveOne) {
+    EXPECT_EQ(1, add(1, 0));
+    EXPECT_EQ(1, add(0, 1));
 }
 
 int main(int argc, char **argv) {
