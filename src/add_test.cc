@@ -10,6 +10,9 @@
 TEST(AddTest, onePlusTwoGivesThree) {
     EXPECT_EQ(3, add(1, 2));
 }
+TEST(AddTest, onePlusZeroGivesne) {
+  EXPECT_EQ(1, add(1, 0));
+}
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
