@@ -18,6 +18,6 @@ testSources = ['build/add_test.cc']
 
 testProg = testEnv.Program('a.out', sources + testSources)
 testReport = testEnv.Command('test_report.xml', testProg, "./a.out --gtest_output=xml:${TARGET}")
-coverageReport = testEnv.Command('coverage.xml', testReport, "gcovr --gcov-ignore-errors=no_working_dir_found -x -r build -o ${TARGET}")
+coverageReport = testEnv.Command('cobertura.xml', testReport, "gcovr --gcov-ignore-errors=no_working_dir_found -x -r build -o ${TARGET}")
 
 Default(coverageReport)
